@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background: black;
+}
+*{
+  font-family: 'Chakra Petch', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root{
+  --custom-four: #a494e7, #b152dd,  #02b2f1, #10ddad;
+}
+
+canvas {
+  position: absolute;
+  display: block;
+  border: 10px solid rgb(32, 32, 32);
+  inset: 50vh 50vw;
+  translate: -50% -50%;
+}
+
+#header{
+  color: white;
+  position: relative;
+  top: calc(50vh - 275px - clamp(2em, 6vw, 4em));
+  cursor: default;
+  background: linear-gradient(-45deg, var(--custom-four));
+  background-size: 80%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: clamp(2em, 10vw, 3em);
+}
+#index{
+  position: absolute;
+  bottom: 160px;
+  left: 50vw;
+  translate: -50% 0;
+}
+.result{
+  color: white;
+  position: absolute;
+  bottom: 100px;
+  left: 50vw;
+  translate: -50% 0;
+  cursor: default;
+}
+#retry{
+  bottom: 80px;
+  height: 2em;
+  width: 10em;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  background: linear-gradient(-45deg, var(--custom-four));
+  background-size: 200%;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}

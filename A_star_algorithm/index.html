@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script src="js/p5.js"></script>
+    <script src="js/p5.dom.min.js"></script>
+    <script src="js/p5.sound.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <h2 id="header">A* ALGORITHM</h2>
+    <p id="index">
+      <span style = "color: rgb(203, 228, 222)">Path</span>
+      <span style = "color: rgb(14, 131, 136)">ClosedSet</span>
+      <span style = "color: rgb(134, 93, 255)">OpenSet</span>
+      <span style = "color: rgb(0, 0, 255)">Start/End</span>
+    </p>
+    <h2 class="result" id="result">COMPUTING...</h2>
+    <button class="result" id="retry" onclick="window.location.reload()">RETRY</button>
+  </body>
+
+</html>
